@@ -1,127 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="220">
   <defs>
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00FF9D" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#FF0055" stop-opacity="0.8" />
+    <linearGradient id="subtleBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A3245" />
+      <stop offset="50%" stop-color="#161B26" />
+      <stop offset="100%" stop-color="#2A3245" />
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FFCC" />
-      <stop offset="50%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#FF007F" />
-    </linearGradient>
-    <linearGradient id="matrixGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#003B26" stop-opacity="0.1" />
-      <stop offset="65%" stop-color="#00FF9D" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.8" />
-    </linearGradient>
-    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    <radialGradient id="crimsonGlow" cx="90%" cy="15%" r="45%">
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#080B11" stop-opacity="0" />
     </radialGradient>
-    <clipPath id="innerClip">
-      <rect x="2" y="2" width="846" height="276" rx="14" />
-    </clipPath>
-    <style>
-      @keyframes rain {
-        0% { transform: translateY(-160px); opacity: 0; }
-        15% { opacity: 0.28; }
-        80% { opacity: 0.28; }
-        100% { transform: translateY(320px); opacity: 0; }
-      }
-      @keyframes pulse {
-        0% { opacity: 0.85; filter: drop-shadow(0 0 8px rgba(0,255,204,0.4)); }
-        50% { opacity: 1; filter: drop-shadow(0 0 18px rgba(0,255,204,0.85)); }
-        100% { opacity: 0.85; filter: drop-shadow(0 0 8px rgba(0,255,204,0.4)); }
-      }
-      @keyframes bar1 { 0%, 100% { height: 12px; } 50% { height: 42px; } }
-      @keyframes bar2 { 0%, 100% { height: 28px; } 50% { height: 10px; } }
-      @keyframes bar3 { 0%, 100% { height: 35px; } 50% { height: 50px; } }
-      @keyframes bar4 { 0%, 100% { height: 8px; } 50% { height: 32px; } }
-      .glowing-title { animation: pulse 3s infinite ease-in-out; }
-      .eq-bar { fill: #00FFCC; opacity: 0.75; transform-origin: bottom; }
-      .matrix-stream {
-        fill: url(#matrixGrad);
-        font-family: 'Courier New', monospace;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-    </style>
   </defs>
 
-  <!-- Container Box -->
-  <rect width="850" height="280" rx="16" fill="#06090F" stroke="url(#borderGrad)" stroke-width="1.5" />
+  <!-- Frame Background -->
+  <rect width="920" height="220" rx="8" fill="#07090E" stroke="url(#subtleBorder)" stroke-width="1" />
+  <rect width="920" height="220" rx="8" fill="url(#crimsonGlow)" />
 
-  <!-- Background Matrix Rain Layer -->
-  <g clip-path="url(#innerClip)">
-    <text x="35" y="-80" class="matrix-stream" style="animation: rain 5.49s infinite linear; animation-delay: -4.12s;"><tspan x="35" dy="15">1</tspan><tspan x="35" dy="15">B</tspan><tspan x="35" dy="15">5</tspan><tspan x="35" dy="15">A</tspan><tspan x="35" dy="15">C</tspan><tspan x="35" dy="15">B</tspan><tspan x="35" dy="15">9</tspan><tspan x="35" dy="15">C</tspan><tspan x="35" dy="15">6</tspan><tspan x="35" dy="15">B</tspan><tspan x="35" dy="15">3</tspan><tspan x="35" dy="15">D</tspan><tspan x="35" dy="15">C</tspan><tspan x="35" dy="15">2</tspan><tspan x="35" dy="15">0</tspan><tspan x="35" dy="15">B</tspan><tspan x="35" dy="15">C</tspan><tspan x="35" dy="15">C</tspan><tspan x="35" dy="15">9</tspan><tspan x="35" dy="15">0</tspan><tspan x="35" dy="15">B</tspan><tspan x="35" dy="15">3</tspan><tspan x="35" dy="15">E</tspan><tspan x="35" dy="15">7</tspan><tspan x="35" dy="15">5</tspan></text>
-    <text x="75" y="-80" class="matrix-stream" style="animation: rain 5.32s infinite linear; animation-delay: -4.16s;"><tspan x="75" dy="15">E</tspan><tspan x="75" dy="15">8</tspan><tspan x="75" dy="15">6</tspan><tspan x="75" dy="15">1</tspan><tspan x="75" dy="15">2</tspan><tspan x="75" dy="15">0</tspan><tspan x="75" dy="15">1</tspan><tspan x="75" dy="15">2</tspan><tspan x="75" dy="15">D</tspan><tspan x="75" dy="15">1</tspan><tspan x="75" dy="15">0</tspan><tspan x="75" dy="15">6</tspan><tspan x="75" dy="15">6</tspan><tspan x="75" dy="15">3</tspan><tspan x="75" dy="15">9</tspan><tspan x="75" dy="15">6</tspan><tspan x="75" dy="15">E</tspan><tspan x="75" dy="15">A</tspan><tspan x="75" dy="15">0</tspan><tspan x="75" dy="15">A</tspan><tspan x="75" dy="15">D</tspan><tspan x="75" dy="15">7</tspan><tspan x="75" dy="15">1</tspan><tspan x="75" dy="15">1</tspan><tspan x="75" dy="15">1</tspan></text>
-    <text x="115" y="-80" class="matrix-stream" style="animation: rain 5.88s infinite linear; animation-delay: -1.0s;"><tspan x="115" dy="15">6</tspan><tspan x="115" dy="15">5</tspan><tspan x="115" dy="15">0</tspan><tspan x="115" dy="15">0</tspan><tspan x="115" dy="15">0</tspan><tspan x="115" dy="15">5</tspan><tspan x="115" dy="15">1</tspan><tspan x="115" dy="15">F</tspan><tspan x="115" dy="15">E</tspan><tspan x="115" dy="15">0</tspan><tspan x="115" dy="15">0</tspan><tspan x="115" dy="15">F</tspan><tspan x="115" dy="15">1</tspan><tspan x="115" dy="15">B</tspan><tspan x="115" dy="15">1</tspan><tspan x="115" dy="15">8</tspan><tspan x="115" dy="15">8</tspan><tspan x="115" dy="15">2</tspan><tspan x="115" dy="15">4</tspan><tspan x="115" dy="15">1</tspan><tspan x="115" dy="15">5</tspan><tspan x="115" dy="15">A</tspan><tspan x="115" dy="15">2</tspan><tspan x="115" dy="15">6</tspan><tspan x="115" dy="15">E</tspan></text>
-    <text x="155" y="-80" class="matrix-stream" style="animation: rain 3.9s infinite linear; animation-delay: -1.73s;"><tspan x="155" dy="15">1</tspan><tspan x="155" dy="15">1</tspan><tspan x="155" dy="15">4</tspan><tspan x="155" dy="15">D</tspan><tspan x="155" dy="15">B</tspan><tspan x="155" dy="15">1</tspan><tspan x="155" dy="15">D</tspan><tspan x="155" dy="15">9</tspan><tspan x="155" dy="15">4</tspan><tspan x="155" dy="15">1</tspan><tspan x="155" dy="15">E</tspan><tspan x="155" dy="15">B</tspan><tspan x="155" dy="15">C</tspan><tspan x="155" dy="15">2</tspan><tspan x="155" dy="15">6</tspan><tspan x="155" dy="15">B</tspan><tspan x="155" dy="15">8</tspan><tspan x="155" dy="15">6</tspan><tspan x="155" dy="15">6</tspan><tspan x="155" dy="15">4</tspan><tspan x="155" dy="15">F</tspan><tspan x="155" dy="15">C</tspan><tspan x="155" dy="15">D</tspan><tspan x="155" dy="15">1</tspan><tspan x="155" dy="15">8</tspan></text>
-    <text x="195" y="-80" class="matrix-stream" style="animation: rain 4.46s infinite linear; animation-delay: -1.75s;"><tspan x="195" dy="15">A</tspan><tspan x="195" dy="15">C</tspan><tspan x="195" dy="15">6</tspan><tspan x="195" dy="15">D</tspan><tspan x="195" dy="15">5</tspan><tspan x="195" dy="15">F</tspan><tspan x="195" dy="15">A</tspan><tspan x="195" dy="15">1</tspan><tspan x="195" dy="15">0</tspan><tspan x="195" dy="15">1</tspan><tspan x="195" dy="15">6</tspan><tspan x="195" dy="15">D</tspan><tspan x="195" dy="15">9</tspan><tspan x="195" dy="15">1</tspan><tspan x="195" dy="15">A</tspan><tspan x="195" dy="15">C</tspan><tspan x="195" dy="15">B</tspan><tspan x="195" dy="15">7</tspan><tspan x="195" dy="15">9</tspan><tspan x="195" dy="15">E</tspan><tspan x="195" dy="15">C</tspan><tspan x="195" dy="15">C</tspan><tspan x="195" dy="15">4</tspan><tspan x="195" dy="15">8</tspan><tspan x="195" dy="15">7</tspan></text>
-    <text x="235" y="-80" class="matrix-stream" style="animation: rain 5.2s infinite linear; animation-delay: -1.96s;"><tspan x="235" dy="15">E</tspan><tspan x="235" dy="15">0</tspan><tspan x="235" dy="15">A</tspan><tspan x="235" dy="15">2</tspan><tspan x="235" dy="15">8</tspan><tspan x="235" dy="15">F</tspan><tspan x="235" dy="15">0</tspan><tspan x="235" dy="15">C</tspan><tspan x="235" dy="15">4</tspan><tspan x="235" dy="15">1</tspan><tspan x="235" dy="15">0</tspan><tspan x="235" dy="15">C</tspan><tspan x="235" dy="15">6</tspan><tspan x="235" dy="15">E</tspan><tspan x="235" dy="15">3</tspan><tspan x="235" dy="15">7</tspan><tspan x="235" dy="15">9</tspan><tspan x="235" dy="15">1</tspan><tspan x="235" dy="15">F</tspan><tspan x="235" dy="15">6</tspan><tspan x="235" dy="15">B</tspan><tspan x="235" dy="15">1</tspan><tspan x="235" dy="15">A</tspan><tspan x="235" dy="15">8</tspan><tspan x="235" dy="15">3</tspan></text>
-    <text x="275" y="-80" class="matrix-stream" style="animation: rain 3.56s infinite linear; animation-delay: -3.44s;"><tspan x="275" dy="15">4</tspan><tspan x="275" dy="15">0</tspan><tspan x="275" dy="15">1</tspan><tspan x="275" dy="15">1</tspan><tspan x="275" dy="15">F</tspan><tspan x="275" dy="15">9</tspan><tspan x="275" dy="15">0</tspan><tspan x="275" dy="15">4</tspan><tspan x="275" dy="15">4</tspan><tspan x="275" dy="15">E</tspan><tspan x="275" dy="15">2</tspan><tspan x="275" dy="15">F</tspan><tspan x="275" dy="15">E</tspan><tspan x="275" dy="15">0</tspan><tspan x="275" dy="15">5</tspan><tspan x="275" dy="15">6</tspan><tspan x="275" dy="15">5</tspan><tspan x="275" dy="15">7</tspan><tspan x="275" dy="15">7</tspan><tspan x="275" dy="15">1</tspan><tspan x="275" dy="15">E</tspan><tspan x="275" dy="15">E</tspan><tspan x="275" dy="15">C</tspan><tspan x="275" dy="15">9</tspan><tspan x="275" dy="15">A</tspan></text>
-    <text x="315" y="-80" class="matrix-stream" style="animation: rain 3.67s infinite linear; animation-delay: -2.1s;"><tspan x="315" dy="15">3</tspan><tspan x="315" dy="15">5</tspan><tspan x="315" dy="15">2</tspan><tspan x="315" dy="15">0</tspan><tspan x="315" dy="15">9</tspan><tspan x="315" dy="15">6</tspan><tspan x="315" dy="15">5</tspan><tspan x="315" dy="15">6</tspan><tspan x="315" dy="15">3</tspan><tspan x="315" dy="15">2</tspan><tspan x="315" dy="15">5</tspan><tspan x="315" dy="15">1</tspan><tspan x="315" dy="15">C</tspan><tspan x="315" dy="15">7</tspan><tspan x="315" dy="15">1</tspan><tspan x="315" dy="15">D</tspan><tspan x="315" dy="15">7</tspan><tspan x="315" dy="15">D</tspan><tspan x="315" dy="15">A</tspan><tspan x="315" dy="15">1</tspan><tspan x="315" dy="15">E</tspan><tspan x="315" dy="15">F</tspan><tspan x="315" dy="15">6</tspan><tspan x="315" dy="15">2</tspan><tspan x="315" dy="15">2</tspan></text>
-    <text x="355" y="-80" class="matrix-stream" style="animation: rain 5.39s infinite linear; animation-delay: -5.66s;"><tspan x="355" dy="15">4</tspan><tspan x="355" dy="15">B</tspan><tspan x="355" dy="15">8</tspan><tspan x="355" dy="15">C</tspan><tspan x="355" dy="15">0</tspan><tspan x="355" dy="15">0</tspan><tspan x="355" dy="15">7</tspan><tspan x="355" dy="15">1</tspan><tspan x="355" dy="15">1</tspan><tspan x="355" dy="15">1</tspan><tspan x="355" dy="15">3</tspan><tspan x="355" dy="15">C</tspan><tspan x="355" dy="15">8</tspan><tspan x="355" dy="15">0</tspan><tspan x="355" dy="15">1</tspan><tspan x="355" dy="15">9</tspan><tspan x="355" dy="15">4</tspan><tspan x="355" dy="15">0</tspan><tspan x="355" dy="15">D</tspan><tspan x="355" dy="15">9</tspan><tspan x="355" dy="15">F</tspan><tspan x="355" dy="15">B</tspan><tspan x="355" dy="15">1</tspan><tspan x="355" dy="15">A</tspan><tspan x="355" dy="15">0</tspan></text>
-    <text x="395" y="-80" class="matrix-stream" style="animation: rain 3.55s infinite linear; animation-delay: -0.24s;"><tspan x="395" dy="15">1</tspan><tspan x="395" dy="15">B</tspan><tspan x="395" dy="15">D</tspan><tspan x="395" dy="15">D</tspan><tspan x="395" dy="15">C</tspan><tspan x="395" dy="15">F</tspan><tspan x="395" dy="15">5</tspan><tspan x="395" dy="15">0</tspan><tspan x="395" dy="15">F</tspan><tspan x="395" dy="15">5</tspan><tspan x="395" dy="15">6</tspan><tspan x="395" dy="15">2</tspan><tspan x="395" dy="15">D</tspan><tspan x="395" dy="15">6</tspan><tspan x="395" dy="15">2</tspan><tspan x="395" dy="15">1</tspan><tspan x="395" dy="15">0</tspan><tspan x="395" dy="15">5</tspan><tspan x="395" dy="15">D</tspan><tspan x="395" dy="15">7</tspan><tspan x="395" dy="15">2</tspan><tspan x="395" dy="15">7</tspan><tspan x="395" dy="15">0</tspan><tspan x="395" dy="15">5</tspan><tspan x="395" dy="15">D</tspan></text>
-    <text x="435" y="-80" class="matrix-stream" style="animation: rain 5.2s infinite linear; animation-delay: -0.18s;"><tspan x="435" dy="15">0</tspan><tspan x="435" dy="15">1</tspan><tspan x="435" dy="15">9</tspan><tspan x="435" dy="15">3</tspan><tspan x="435" dy="15">A</tspan><tspan x="435" dy="15">9</tspan><tspan x="435" dy="15">1</tspan><tspan x="435" dy="15">F</tspan><tspan x="435" dy="15">B</tspan><tspan x="435" dy="15">A</tspan><tspan x="435" dy="15">0</tspan><tspan x="435" dy="15">B</tspan><tspan x="435" dy="15">A</tspan><tspan x="435" dy="15">6</tspan><tspan x="435" dy="15">3</tspan><tspan x="435" dy="15">1</tspan><tspan x="435" dy="15">0</tspan><tspan x="435" dy="15">1</tspan><tspan x="435" dy="15">C</tspan><tspan x="435" dy="15">0</tspan><tspan x="435" dy="15">C</tspan><tspan x="435" dy="15">1</tspan><tspan x="435" dy="15">C</tspan><tspan x="435" dy="15">0</tspan><tspan x="435" dy="15">1</tspan></text>
-    <text x="475" y="-80" class="matrix-stream" style="animation: rain 3.68s infinite linear; animation-delay: -2.29s;"><tspan x="475" dy="15">E</tspan><tspan x="475" dy="15">2</tspan><tspan x="475" dy="15">A</tspan><tspan x="475" dy="15">0</tspan><tspan x="475" dy="15">E</tspan><tspan x="475" dy="15">1</tspan><tspan x="475" dy="15">0</tspan><tspan x="475" dy="15">6</tspan><tspan x="475" dy="15">2</tspan><tspan x="475" dy="15">E</tspan><tspan x="475" dy="15">B</tspan><tspan x="475" dy="15">B</tspan><tspan x="475" dy="15">1</tspan><tspan x="475" dy="15">4</tspan><tspan x="475" dy="15">4</tspan><tspan x="475" dy="15">3</tspan><tspan x="475" dy="15">7</tspan><tspan x="475" dy="15">D</tspan><tspan x="475" dy="15">5</tspan><tspan x="475" dy="15">4</tspan><tspan x="475" dy="15">6</tspan><tspan x="475" dy="15">8</tspan><tspan x="475" dy="15">C</tspan><tspan x="475" dy="15">F</tspan><tspan x="475" dy="15">A</tspan></text>
-    <text x="515" y="-80" class="matrix-stream" style="animation: rain 5.05s infinite linear; animation-delay: -2.57s;"><tspan x="515" dy="15">5</tspan><tspan x="515" dy="15">F</tspan><tspan x="515" dy="15">8</tspan><tspan x="515" dy="15">1</tspan><tspan x="515" dy="15">2</tspan><tspan x="515" dy="15">8</tspan><tspan x="515" dy="15">F</tspan><tspan x="515" dy="15">8</tspan><tspan x="515" dy="15">4</tspan><tspan x="515" dy="15">3</tspan><tspan x="515" dy="15">6</tspan><tspan x="515" dy="15">4</tspan><tspan x="515" dy="15">5</tspan><tspan x="515" dy="15">4</tspan><tspan x="515" dy="15">1</tspan><tspan x="515" dy="15">0</tspan><tspan x="515" dy="15">1</tspan><tspan x="515" dy="15">7</tspan><tspan x="515" dy="15">B</tspan><tspan x="515" dy="15">3</tspan><tspan x="515" dy="15">9</tspan><tspan x="515" dy="15">6</tspan><tspan x="515" dy="15">2</tspan><tspan x="515" dy="15">0</tspan><tspan x="515" dy="15">D</tspan></text>
-    <text x="555" y="-80" class="matrix-stream" style="animation: rain 4.84s infinite linear; animation-delay: -5.79s;"><tspan x="555" dy="15">C</tspan><tspan x="555" dy="15">C</tspan><tspan x="555" dy="15">2</tspan><tspan x="555" dy="15">6</tspan><tspan x="555" dy="15">5</tspan><tspan x="555" dy="15">B</tspan><tspan x="555" dy="15">6</tspan><tspan x="555" dy="15">0</tspan><tspan x="555" dy="15">1</tspan><tspan x="555" dy="15">7</tspan><tspan x="555" dy="15">3</tspan><tspan x="555" dy="15">9</tspan><tspan x="555" dy="15">1</tspan><tspan x="555" dy="15">A</tspan><tspan x="555" dy="15">9</tspan><tspan x="555" dy="15">A</tspan><tspan x="555" dy="15">9</tspan><tspan x="555" dy="15">1</tspan><tspan x="555" dy="15">8</tspan><tspan x="555" dy="15">D</tspan><tspan x="555" dy="15">A</tspan><tspan x="555" dy="15">A</tspan><tspan x="555" dy="15">2</tspan><tspan x="555" dy="15">1</tspan><tspan x="555" dy="15">8</tspan></text>
-    <text x="595" y="-80" class="matrix-stream" style="animation: rain 5.37s infinite linear; animation-delay: -4.93s;"><tspan x="595" dy="15">A</tspan><tspan x="595" dy="15">1</tspan><tspan x="595" dy="15">4</tspan><tspan x="595" dy="15">D</tspan><tspan x="595" dy="15">F</tspan><tspan x="595" dy="15">F</tspan><tspan x="595" dy="15">A</tspan><tspan x="595" dy="15">5</tspan><tspan x="595" dy="15">C</tspan><tspan x="595" dy="15">0</tspan><tspan x="595" dy="15">0</tspan><tspan x="595" dy="15">E</tspan><tspan x="595" dy="15">2</tspan><tspan x="595" dy="15">6</tspan><tspan x="595" dy="15">1</tspan><tspan x="595" dy="15">C</tspan><tspan x="595" dy="15">9</tspan><tspan x="595" dy="15">6</tspan><tspan x="595" dy="15">0</tspan><tspan x="595" dy="15">F</tspan><tspan x="595" dy="15">D</tspan><tspan x="595" dy="15">E</tspan><tspan x="595" dy="15">4</tspan><tspan x="595" dy="15">C</tspan><tspan x="595" dy="15">C</tspan></text>
-    <text x="635" y="-80" class="matrix-stream" style="animation: rain 4.46s infinite linear; animation-delay: -3.67s;"><tspan x="635" dy="15">8</tspan><tspan x="635" dy="15">A</tspan><tspan x="635" dy="15">4</tspan><tspan x="635" dy="15">8</tspan><tspan x="635" dy="15">8</tspan><tspan x="635" dy="15">0</tspan><tspan x="635" dy="15">8</tspan><tspan x="635" dy="15">3</tspan><tspan x="635" dy="15">3</tspan><tspan x="635" dy="15">5</tspan><tspan x="635" dy="15">4</tspan><tspan x="635" dy="15">B</tspan><tspan x="635" dy="15">D</tspan><tspan x="635" dy="15">4</tspan><tspan x="635" dy="15">0</tspan><tspan x="635" dy="15">3</tspan><tspan x="635" dy="15">4</tspan><tspan x="635" dy="15">0</tspan><tspan x="635" dy="15">C</tspan><tspan x="635" dy="15">B</tspan><tspan x="635" dy="15">D</tspan><tspan x="635" dy="15">1</tspan><tspan x="635" dy="15">0</tspan><tspan x="635" dy="15">9</tspan><tspan x="635" dy="15">2</tspan></text>
-    <text x="675" y="-80" class="matrix-stream" style="animation: rain 3.58s infinite linear; animation-delay: -2.31s;"><tspan x="675" dy="15">0</tspan><tspan x="675" dy="15">E</tspan><tspan x="675" dy="15">0</tspan><tspan x="675" dy="15">3</tspan><tspan x="675" dy="15">1</tspan><tspan x="675" dy="15">7</tspan><tspan x="675" dy="15">4</tspan><tspan x="675" dy="15">7</tspan><tspan x="675" dy="15">2</tspan><tspan x="675" dy="15">0</tspan><tspan x="675" dy="15">1</tspan><tspan x="675" dy="15">1</tspan><tspan x="675" dy="15">0</tspan><tspan x="675" dy="15">0</tspan><tspan x="675" dy="15">A</tspan><tspan x="675" dy="15">4</tspan><tspan x="675" dy="15">A</tspan><tspan x="675" dy="15">7</tspan><tspan x="675" dy="15">9</tspan><tspan x="675" dy="15">9</tspan><tspan x="675" dy="15">A</tspan><tspan x="675" dy="15">9</tspan><tspan x="675" dy="15">C</tspan><tspan x="675" dy="15">A</tspan><tspan x="675" dy="15">5</tspan></text>
-    <text x="715" y="-80" class="matrix-stream" style="animation: rain 5.1s infinite linear; animation-delay: -2.59s;"><tspan x="715" dy="15">C</tspan><tspan x="715" dy="15">3</tspan><tspan x="715" dy="15">D</tspan><tspan x="715" dy="15">D</tspan><tspan x="715" dy="15">C</tspan><tspan x="715" dy="15">7</tspan><tspan x="715" dy="15">E</tspan><tspan x="715" dy="15">2</tspan><tspan x="715" dy="15">7</tspan><tspan x="715" dy="15">0</tspan><tspan x="715" dy="15">0</tspan><tspan x="715" dy="15">5</tspan><tspan x="715" dy="15">C</tspan><tspan x="715" dy="15">8</tspan><tspan x="715" dy="15">A</tspan><tspan x="715" dy="15">8</tspan><tspan x="715" dy="15">E</tspan><tspan x="715" dy="15">5</tspan><tspan x="715" dy="15">2</tspan><tspan x="715" dy="15">0</tspan><tspan x="715" dy="15">1</tspan><tspan x="715" dy="15">8</tspan><tspan x="715" dy="15">A</tspan><tspan x="715" dy="15">E</tspan><tspan x="715" dy="15">0</tspan></text>
-    <text x="755" y="-80" class="matrix-stream" style="animation: rain 4.7s infinite linear; animation-delay: -1.6s;"><tspan x="755" dy="15">0</tspan><tspan x="755" dy="15">F</tspan><tspan x="755" dy="15">C</tspan><tspan x="755" dy="15">3</tspan><tspan x="755" dy="15">B</tspan><tspan x="755" dy="15">1</tspan><tspan x="755" dy="15">0</tspan><tspan x="755" dy="15">7</tspan><tspan x="755" dy="15">0</tspan><tspan x="755" dy="15">8</tspan><tspan x="755" dy="15">E</tspan><tspan x="755" dy="15">9</tspan><tspan x="755" dy="15">E</tspan><tspan x="755" dy="15">5</tspan><tspan x="755" dy="15">0</tspan><tspan x="755" dy="15">0</tspan><tspan x="755" dy="15">A</tspan><tspan x="755" dy="15">E</tspan><tspan x="755" dy="15">C</tspan><tspan x="755" dy="15">1</tspan><tspan x="755" dy="15">1</tspan><tspan x="755" dy="15">7</tspan><tspan x="755" dy="15">F</tspan><tspan x="755" dy="15">1</tspan><tspan x="755" dy="15">5</tspan></text>
-    <text x="795" y="-80" class="matrix-stream" style="animation: rain 3.92s infinite linear; animation-delay: -3.34s;"><tspan x="795" dy="15">8</tspan><tspan x="795" dy="15">9</tspan><tspan x="795" dy="15">5</tspan><tspan x="795" dy="15">F</tspan><tspan x="795" dy="15">1</tspan><tspan x="795" dy="15">9</tspan><tspan x="795" dy="15">C</tspan><tspan x="795" dy="15">1</tspan><tspan x="795" dy="15">E</tspan><tspan x="795" dy="15">1</tspan><tspan x="795" dy="15">0</tspan><tspan x="795" dy="15">D</tspan><tspan x="795" dy="15">D</tspan><tspan x="795" dy="15">1</tspan><tspan x="795" dy="15">4</tspan><tspan x="795" dy="15">A</tspan><tspan x="795" dy="15">3</tspan><tspan x="795" dy="15">C</tspan><tspan x="795" dy="15">A</tspan><tspan x="795" dy="15">3</tspan><tspan x="795" dy="15">1</tspan><tspan x="795" dy="15">7</tspan><tspan x="795" dy="15">7</tspan><tspan x="795" dy="15">B</tspan><tspan x="795" dy="15">8</tspan></text>
-  </g>
+  <!-- Technical Grid Accents -->
+  <line x1="40" y1="38" x2="880" y2="38" stroke="#161D2B" stroke-width="1" />
+  <line x1="40" y1="178" x2="880" y2="178" stroke="#161D2B" stroke-width="1" />
 
-  <!-- Backdrop Glow overlay to enhance contrast for foreground text -->
-  <rect x="10" y="10" width="830" height="260" rx="10" fill="url(#coreGlow)" />
+  <!-- Alignment Crosshairs -->
+  <text x="38" y="42" fill="#E11D48" font-family="monospace" font-size="11" font-weight="bold">+</text>
+  <text x="874" y="42" fill="#64748B" font-family="monospace" font-size="11">+</text>
+  <text x="38" y="182" fill="#64748B" font-family="monospace" font-size="11">+</text>
+  <text x="874" y="182" fill="#E11D48" font-family="monospace" font-size="11" font-weight="bold">+</text>
 
-  <!-- Terminal Top Bar -->
-  <line x1="10" y1="44" x2="840" y2="44" stroke="#1F293D" stroke-width="1" />
-  <circle cx="32" cy="27" r="5" fill="#FF5F56" />
-  <circle cx="48" cy="27" r="5" fill="#FFBD2E" />
-  <circle cx="64" cy="27" r="5" fill="#27C93F" />
-  <text x="85" y="31" fill="#64748B" font-family="monospace" font-size="12" letter-spacing="1">dantez@arch-kernel // [DIGITAL-RAIN: ACTIVE] [GPU-COMPUTE: 60 FPS]</text>
-  <text x="730" y="31" fill="#00FF9D" font-family="monospace" font-size="11" letter-spacing="1">● ONLINE</text>
+  <!-- Metadata Header -->
+  <text x="54" y="27" fill="#64748B" font-family="monospace" font-size="10" letter-spacing="2">STUDIO // ENGINEERING JOURNAL</text>
+  <text x="460" y="27" fill="#475569" font-family="monospace" font-size="10" letter-spacing="1.5" text-anchor="middle">SYS-TIER: GRAPHICS ACCELERATED</text>
+  <text x="866" y="27" fill="#E11D48" font-family="monospace" font-size="10" letter-spacing="2" text-anchor="end">INDEX // 2026</text>
 
-  <!-- Main Hero Title -->
-  <g class="glowing-title">
-    <text x="50" y="115" fill="url(#textGrad)" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="900" letter-spacing="6">DANTEZ.EXE</text>
-  </g>
-  <text x="52" y="148" fill="#94A3B8" font-family="monospace" font-size="14" letter-spacing="3">CREATIVE TECHNOLOGIST &amp; GRAPHICS ENGINEER</text>
+  <!-- Hero Typography -->
+  <text x="52" y="94" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.5">CREATIVE TECHNOLOGIST</text>
+  <text x="54" y="122" fill="#94A3B8" font-family="monospace" font-size="13" letter-spacing="1.2">Real-Time WebGL · GLSL Shaders · Spatial Physics · Procedural Audio</text>
 
-  <!-- Tags / Status Chips -->
-  <rect x="52" y="172" width="90" height="24" rx="6" fill="#0B132B" stroke="#1E293B" />
-  <text x="68" y="188" fill="#38BDF8" font-family="monospace" font-size="11">WEBGL 2.0</text>
+  <!-- Sub-specifications -->
+  <text x="54" y="152" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="0.5">ARCHITECTURAL STUDIES  |  CINEMATIC EXPERIENCES  |  DETERMINISTIC SIMULATIONS</text>
 
-  <rect x="150" y="172" width="86" height="24" rx="6" fill="#0B132B" stroke="#1E293B" />
-  <text x="165" y="188" fill="#A855F7" font-family="monospace" font-size="11">THREE.JS</text>
-
-  <rect x="244" y="172" width="120" height="24" rx="6" fill="#0B132B" stroke="#1E293B" />
-  <text x="258" y="188" fill="#34D399" font-family="monospace" font-size="11">GLSL SHADERS</text>
-
-  <rect x="372" y="172" width="130" height="24" rx="6" fill="#0B132B" stroke="#1E293B" />
-  <text x="384" y="188" fill="#F43F5E" font-family="monospace" font-size="11">PHYSICS ENGINES</text>
-
-  <!-- Audio Waveform Bars -->
-  <g transform="translate(700, 210)">
-    <rect x="0" y="-15" width="4" height="15" rx="2" class="eq-bar" style="animation: bar1 0.9s infinite ease-in-out;" />
-    <rect x="7" y="-25" width="4" height="25" rx="2" class="eq-bar" style="animation: bar3 1.2s infinite ease-in-out;" />
-    <rect x="14" y="-10" width="4" height="10" rx="2" class="eq-bar" style="animation: bar2 0.7s infinite ease-in-out;" />
-    <rect x="21" y="-35" width="4" height="35" rx="2" class="eq-bar" style="animation: bar1 1.4s infinite ease-in-out;" />
-    <rect x="28" y="-20" width="4" height="20" rx="2" class="eq-bar" style="animation: bar3 0.8s infinite ease-in-out;" />
-    <rect x="35" y="-30" width="4" height="30" rx="2" class="eq-bar" style="animation: bar2 1.1s infinite ease-in-out;" />
-    <rect x="42" y="-12" width="4" height="12" rx="2" class="eq-bar" style="animation: bar4 0.9s infinite ease-in-out;" />
-    <rect x="49" y="-28" width="4" height="28" rx="2" class="eq-bar" style="animation: bar1 1.3s infinite ease-in-out;" />
-    <rect x="56" y="-18" width="4" height="18" rx="2" class="eq-bar" style="animation: bar3 1.0s infinite ease-in-out;" />
-    <rect x="63" y="-8" width="4" height="8" rx="2" class="eq-bar" style="animation: bar2 0.6s infinite ease-in-out;" />
-    <text x="-40" y="-5" fill="#475569" font-family="monospace" font-size="10">SYNTH</text>
-  </g>
-
-  <!-- Bottom Terminal Status line -->
-  <text x="52" y="240" fill="#64748B" font-family="monospace" font-size="12">&gt; root@void:~$ ./deploy_universe --digital-rain active --particles 9000 [OK]</text>
+  <!-- Status Footer -->
+  <circle cx="58" cy="198" r="3.5" fill="#E11D48" />
+  <text x="72" y="201" fill="#94A3B8" font-family="monospace" font-size="10" letter-spacing="1.2">LIVE PRODUCTION BUILDS VERIFIED</text>
+  <text x="866" y="201" fill="#64748B" font-family="monospace" font-size="10" letter-spacing="1" text-anchor="end">GITHUB.COM/ISLOMF2010-DOT</text>
 </svg>
