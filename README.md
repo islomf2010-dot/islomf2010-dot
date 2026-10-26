@@ -56,13 +56,13 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🏎️ <a href="https://github.com/islomf2010-dot/ferrari-f40">FERRARI F40 — REVEAL</a></h3>
+      <h3 align="center">🏎️ <a href="https://github.com/islomf2010-dot/ferrari-f400">FERRARI F40 — REVEAL</a></h3>
       <p align="center">
         <b>Scroll-Driven Cinematic Reveal</b><br/>
         Покадровый интерактивный скролл легендарной F40 1987 года в студии Maranello под управлением единого таймлайна GSAP.
       </p>
       <p align="center">
-        <a href="https://islomf2010-dot.github.io/ferrari-f40/"><b>🎮 [ ЗАПУСТИТЬ LIVE DEMO ]</b></a>
+        <a href="https://ferrari-f400.vercel.app"><b>🎮 [ ЗАПУСТИТЬ LIVE DEMO ]</b></a>
       </p>
       <p align="center">
         <code>GSAP ScrollTrigger</code> <code>Three.js</code> <code>React</code>
