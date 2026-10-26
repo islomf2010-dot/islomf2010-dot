@@ -17,10 +17,10 @@
 
 | Project | Description | Tech Stack |
 |---|---|---|
-| 🌌 [**AFTERLIGHT**](https://github.com/islomf2010-dot/afterlight) | Interactive cinematic WebGL film. Six scenes, one canvas, everything generated at runtime without external 3D models or textures. |      |
-| 🏛️ [**AFTERFORM**](https://github.com/islomf2010-dot/afterform) | Interactive generative architecture studio. Procedural concrete, glass & stone compositions beyond reality. |     |
-| 🏎️ [**Ferrari F40 — The Reveal**](https://github.com/islomf2010-dot/ferrari-f40) | Cinematic scroll-scrubbed reveal of the iconic 1987 Ferrari F40 in a dark Maranello studio. |    |
-| 🏫 [**School 13**](https://github.com/islomf2010-dot/school-13) | Top-down roguelite survival shooter with bosses, weapons, meta-progression, and AI enhancements. |    |
+| 🌌 [**AFTERLIGHT**](https://github.com/islomf2010-dot/afterlight) | Interactive cinematic WebGL film. Six scenes, one canvas, everything generated at runtime without external 3D models or textures. | `Three.js` `R3F` `Postprocessing` `GSAP` `Lenis` |
+| 🏛️ [**AFTERFORM**](https://github.com/islomf2010-dot/afterform) | Interactive generative architecture studio. Procedural concrete, glass & stone compositions beyond reality. | `Three.js` `R3F` `TypeScript` `Vite` |
+| 🏎️ [**Ferrari F40 — The Reveal**](https://github.com/islomf2010-dot/ferrari-f40) | Cinematic scroll-scrubbed reveal of the iconic 1987 Ferrari F40 in a dark Maranello studio. | `GSAP ScrollTrigger` `Three.js` `React` |
+| 🏫 [**School 13**](https://github.com/islomf2010-dot/school-13) | Top-down roguelite survival shooter with bosses, weapons, meta-progression, and AI enhancements. | `React 19` `HTML5 Canvas` `Gemini AI` |
 
 ---
 
