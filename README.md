@@ -1,117 +1,101 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/islomf2010-dot/islomf2010-dot/main/assets/banner.svg" alt="Engineering Studio Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/islomf2010-dot/islomf2010-dot/main/assets/banner.svg" alt="Creative Technologist Studio Banner" width="100%" />
 </div>
 
 <br/>
 
-## Overview
+## Introduction
 
-> **Creative Technologist building interactive worlds, cinematic interfaces, and real-time graphics for the web.**
+I am a **Creative Technologist** building real-time graphics, cinematic web experiences, and interactive software systems.
 
-I engineer in-browser visual systems where graphics, audio, and physics operate as a unified runtime process. Rather than relying on heavy pre-packaged 3D assets or generic web templates, my work emphasizes mathematical procedural generation, custom GLSL shader pipelines, deterministic clock synchronization, and low-latency interaction design.
-
-Every project in this archive is designed to be lightweight, responsive, and resilient across diverse hardware profiles.
+My work centers on the intersection of mathematical procedural generation, custom shader pipelines, physical simulation, and low-latency interaction design. Rather than assembling template interfaces or loading multi-megabyte static 3D models, I design lightweight, in-browser graphics systems where visual geometry, lighting, and acoustic synthesis are computed dynamically at runtime.
 
 ---
 
 ## Selected Work
 
 ### 01. AFTERLIGHT — The World Between Frames
-**An interactive cinematic WebGL film in six seamless scenes, synthesized entirely at runtime within a single WebGL context.**
+**An interactive cinematic WebGL film in six acts, rendered within a single WebGL context with zero downloaded assets.**
 
-```
-[ ARCHITECTURE: 6 SCENES ] ──► [ SINGLE WEBGL CONTEXT ] ──► [ PROCEDURAL SOUND ENGINE ] ──► [ ZERO ASSET DOWNLOADS ]
-```
+[![AFTERLIGHT Preview](https://raw.githubusercontent.com/islomf2010-dot/afterlight/main/docs/banner.png)](https://islomf2010-dot.github.io/afterlight/)
 
 * **Live Demonstration:** [islomf2010-dot.github.io/afterlight](https://islomf2010-dot.github.io/afterlight/)
-* **Source Repository:** [github.com/islomf2010-dot/afterlight](https://github.com/islomf2010-dot/afterlight)
-* **Core Stack:** `Three.js` · `React Three Fiber` · `@react-three/postprocessing` · `GLSL Shaders` · `Web Audio API` · `GSAP / Lenis` · `Playwright`
-* **Key Engineering Feature:** 
-  * **Runtime Hardware Probing & Zero-Asset Synthesis:** Inspects GPU capabilities, thread concurrency, and viewport metrics at startup to configure a safe rendering tier. All geometry, water surfaces, atmospheric noise, particles, and acoustic drones are generated procedurally on the GPU and Web Audio thread—requiring zero external 3D models or audio samples.
+* **Repository:** [github.com/islomf2010-dot/afterlight](https://github.com/islomf2010-dot/afterlight)
+* **Verified Technologies:** `Three.js` · `React Three Fiber` · `@react-three/postprocessing` · `GLSL Shaders` · `Web Audio API` · `GSAP / Lenis` · `Vitest` · `Playwright`
+* **Architectural Differentiator:** 
+  * **Runtime Hardware Probing & Zero-Asset Synthesis:** Executes a device capability probe at boot (`detectWebGL()`, concurrency, memory, pointer heuristics) to configure a safe GPU budget or gracefully route unaccelerated devices to a readable view. All procedural ocean surfaces (Gerstner waves), simplex noise fog, 2,400 reassembling mesh fragments, and multi-oscillator acoustic drones are generated in memory without external asset requests.
 
 ---
 
 ### 02. AFTERFORM — Generative Architecture Studio
-**An interactive spatial laboratory algorithmically generating brutalist and minimalist structural studies from pseudo-random seeds.**
+**An interactive 3D studio algorithmically composing abstract brutalist and minimalist structures from pseudo-random seeds.**
+
+[![AFTERFORM Hero](https://raw.githubusercontent.com/islomf2010-dot/afterform/main/docs/hero.png)](https://islomf2010-dot.github.io/afterform/)
 
 * **Live Demonstration:** [islomf2010-dot.github.io/afterform](https://islomf2010-dot.github.io/afterform/)
-* **Source Repository:** [github.com/islomf2010-dot/afterform](https://github.com/islomf2010-dot/afterform)
-* **Core Stack:** `Three.js` · `React Three Fiber` · `Zustand` · `TypeScript` · `Vite` · `Vitest`
-* **Key Engineering Feature:**
-  * **Constrained Spatial Grammar & Instanced Rendering:** Generates architectural massing snapped to strict modular units (`CELL = 2m`, `STOREY = 1.15m`) with strict volume budgets for enclosures, bridges, and gateways. Renders hundreds of geometric modules in batched `InstancedMesh` draw calls with dynamic real-time material parameters (concrete roughness, glass transmission, procedural stone).
+* **Repository:** [github.com/islomf2010-dot/afterform](https://github.com/islomf2010-dot/afterform)
+* **Verified Technologies:** `Three.js` · `React Three Fiber` · `InstancedMesh` · `Zustand` · `TypeScript` · `Vite` · `Vitest` · `Playwright`
+* **Architectural Differentiator:**
+  * **Constrained Spatial Grammar & Single-Draw-Call Instancing:** Implements strict modular grid coordinates (`CELL = 2.0m`, `STOREY = 1.15m`) with allocated volumetric budgets for enclosures, bridges, and gateways. Renders hundreds of geometric elements through batched `InstancedMesh` matrices while supporting real-time material parameter mutation (concrete roughness, glass transmission, procedural stone).
 
 ---
 
 ### 03. Ferrari F40 — The Reveal
-**A scroll-scrubbed cinematic study exploring the 1987 Ferrari F40 through a deterministic, frame-accurate camera trajectory.**
+**A scroll-scrubbed cinematic study examining the 1987 Ferrari F40 through a frame-accurate, deterministic camera walk.**
+
+[![Ferrari F40 Key Art](https://raw.githubusercontent.com/islomf2010-dot/ferrari-f400/main/public/media/f40-keyart.jpg)](https://ferrari-f400.vercel.app)
 
 * **Live Demonstration:** [ferrari-f400.vercel.app](https://ferrari-f400.vercel.app)
-* **Source Repository:** [github.com/islomf2010-dot/ferrari-f400](https://github.com/islomf2010-dot/ferrari-f400)
-* **Core Stack:** `GSAP ScrollTrigger` · `Custom H.264 Video Pipeline` · `React` · `TypeScript` · `Vite`
-* **Key Engineering Feature:**
-  * **Sub-Pixel Clock Synchronization:** Replaces traditional continuous playback with scroll position as the sole master clock. Synchronizes camera motion, studio light rigs, and contextual narrative overlays with zero WebGL overhead, backed by closed-GOP keyframe streams and strict `prefers-reduced-motion` fallbacks.
+* **Repository:** [github.com/islomf2010-dot/ferrari-f400](https://github.com/islomf2010-dot/ferrari-f400)
+* **Verified Technologies:** `GSAP ScrollTrigger` · `Custom H.264 Video Pipeline` · `React` · `TypeScript` · `Vite` · `Playwright`
+* **Architectural Differentiator:**
+  * **Sub-Pixel Clock Synchronization:** Replaces continuous video playback with normalized scroll distance as the exclusive clock. A single GSAP scrub loop drives video frame seeking (thresholded at `1/48s` to prevent decoding churn), synchronized typography opacities, and studio lighting cues with zero WebGL overhead, backed by automated `prefers-reduced-motion` fallbacks.
 
 ---
 
 ### 04. School 13 — Roguelite Survival Engine
-**A 2D top-down survival game engine featuring spatial entity partitioning, procedural industrial audio synthesis, and reactive AI narrative integration.**
+**A 2D top-down survival game engine featuring zero-allocation object pools, procedural industrial breakbeat audio, and adaptive AI dialogue.**
+
+[![School 13 Title Art](https://raw.githubusercontent.com/islomf2010-dot/school-13/main/public/assets/ui/title_key_art.png)](https://islomf2010-dot.github.io/school-13/)
 
 * **Live Demonstration:** [islomf2010-dot.github.io/school-13](https://islomf2010-dot.github.io/school-13/)
-* **Source Repository:** [github.com/islomf2010-dot/school-13](https://github.com/islomf2010-dot/school-13)
-* **Core Stack:** `HTML5 Canvas 2D` · `Web Audio API` · `Google Gemini API` · `TypeScript` · `React 19`
-* **Key Engineering Feature:**
-  * **Procedural Breakbeat Synthesizer & State Loop:** Drives combat with a 136 BPM procedural step-sequenced industrial audio engine that dynamically shifts frequency filters and tempo during ultimate ability states (e.g., time dilation), rendered at a fixed 60 FPS update rate with automated sprite caching and telegraph hazard zones.
+* **Repository:** [github.com/islomf2010-dot/school-13](https://github.com/islomf2010-dot/school-13)
+* **Verified Technologies:** `HTML5 Canvas 2D` · `Web Audio API` · `Google Gemini API` · `TypeScript` · `React 19` · `Vite` · `Node.js Test Runner`
+* **Architectural Differentiator:**
+  * **Zero-Allocation Pools & Step-Sequenced Synthesizer:** Operates a fixed 60 Hz canvas loop utilizing pre-allocated object arrays (420 projectiles, 420 particles, 110 decals) to eliminate Garbage Collection pauses during combat. An integrated 136 BPM procedural step sequencer dynamically adjusts tempo and Biquad lowpass filtering during time-dilation mechanics.
 
 ---
 
 ## Technical Focus
 
-```
-┌── REAL-TIME GRAPHICS & SHADERS ────────────────────────────────────────────────────────┐
-│  • Three.js / React Three Fiber (R3F)           • Custom GLSL Shaders (Vertex & Fragment)│
-│  • InstancedMesh & Draw Call Optimization       • Postprocessing & Atmospheric Pipelines │
-│  • Procedural Mesh Generation & UV Mapping      • GPU Particle & Simulation Fields       │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-
-┌── MOTION & INTERACTION ENGINEERING ────────────────────────────────────────────────────┐
-│  • GSAP (ScrollTrigger & Timeline Scrubbing)   • Lenis Smooth Scrolling Orchestration   │
-│  • Frame-Accurate Scrubbing & Video Sync       • Pointer, Drag, and Spring Physics      │
-│  • Computer Vision Bridges (MediaPipe)         • Strict Reduced-Motion Accessibility    │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-
-┌── AUDIO & COMPUTATIONAL SYSTEMS ───────────────────────────────────────────────────────┐
-│  • Web Audio API (Multi-Oscillator Synthesis)  • Procedural Ambient Drones & Breakbeats │
-│  • Spatial Audio & Frequency Modulation        • Symplectic Orbit & Collision Integrators│
-│  • Deterministic PRNG Seed Architectures       • State Machines & Spatial Partitioning  │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-
-┌── CORE ENGINEERING & WORKFLOW ─────────────────────────────────────────────────────────┐
-│  • React 19 / TypeScript                       • Vite Build Tooling & Rollup Chunking   │
-│  • Vitest (Unit & Deterministic Math Testing)  • Playwright (End-to-End Browser Tests)  │
-│  • Tauri 2.0 (Rust Desktop Integration)        • Linux / Arch Operating Systems         │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
+| Domain | Verified Stack & Methodologies |
+| :--- | :--- |
+| **Creative Development** | Mathematical procedural generation, deterministic PRNG seed architectures, generative spatial massing, cinematic scrollytelling. |
+| **3D Graphics & Rendering** | Three.js, React Three Fiber (R3F), Custom GLSL Shaders (Vertex & Fragment), `InstancedMesh` batching, procedural UV mapping, postprocessing pipelines. |
+| **Frontend Engineering** | React 19, TypeScript (strict mode), Zustand state management, HTML5 Canvas 2D, Vite production bundling, modern CSS architecture. |
+| **Animation & Interaction** | GSAP (ScrollTrigger & Timeline scrubbing), Lenis smooth scroll orchestration, pointer and touch interaction models, frame-accurate seeking. |
+| **Tools & Testing** | Vitest (unit & deterministic math assertions), Node.js native test runner (`node:test`), Playwright (headless browser E2E), Linux / Arch environment. |
 
 ---
 
-## Engineering Philosophy
+## Engineering Approach
 
-1. **Zero-Bloat Fidelity:** Prioritize procedural generation, mathematical algorithms, and shaders over multi-megabyte 3D asset downloads. High-end experiences should load instantaneously on standard connections.
-2. **Deterministic Performance:** Maintain steady 60 FPS by profiling draw calls, managing instancing budgets, and incorporating hardware capability probes during startup to select appropriate rendering tiers.
-3. **Intentional Interaction:** Motion should never serve as empty decoration. Scroll and gestures should function as physical mechanisms that grant visitors agency over the scene.
-4. **Resilient Degradation:** Build graceful fallbacks for devices with constrained GPU resources, touch-only interfaces, and visitors requesting reduced motion.
-
----
-
-## Active Research & Experiments
-
-* **Relativistic Ballistic Computation & Modal Acoustics:** Investigating orbital mechanics coupled to Boolean collision logic gates and standing-wave physical string synthesis ([KEPLER-LOOM](https://github.com/islomf2010-dot)).
-* **Local Vision & Spatial Physics:** Real-time markerless hand tracking through WebGL2 compute passes and rigid body constraint bridges.
-* **Native Desktop Graphics:** Cross-platform music visualization exploring volumetric 3D typography on Tauri 2 and Rust ([NOCTRA](https://github.com/islomf2010-dot)).
+1. **Zero-Bloat Fidelity:** Prioritize procedural generation, mathematical surfaces, and shader pipelines over multi-megabyte 3D asset downloads. Complex scenes should initialize reliably without network bottlenecks.
+2. **Performance-Aware Rendering:** Maintain a target 60 FPS by measuring real draw calls, budgeting geometric instances, and implementing hardware capability probes to select appropriate rendering tiers at boot.
+3. **Intentional Interaction Design:** Interaction must serve functional navigation and spatial comprehension. Scroll and pointer inputs are treated as physical controls rather than superficial triggers.
+4. **Reliable Architecture:** Maintain clean separation between state management, physics simulation, and rendering loops. Codebases are reinforced with automated unit and end-to-end test suites.
+5. **Accessible & Responsive Resilience:** Provide explicit fallbacks for devices with constrained GPU resources, touch-only interfaces, and visitors requesting `prefers-reduced-motion`.
 
 ---
 
-## Contact & Code Repositories
+## Current Experiments
 
-* **GitHub:** [github.com/islomf2010-dot](https://github.com/islomf2010-dot)
-* **Status:** Open to technical collaborations, creative engineering commissions, and graphics experiments.
+* **Relativistic Ballistic Computation & Modal Acoustics:** Coupling 4th-order symplectic orbital integrators with Boolean collision logic gates and physical standing-wave string synthesis (`KEPLER-LOOM`).
+* **Spatial Vision & Physics Bridges:** Real-time markerless hand tracking using MediaPipe Tasks Vision connected to 2D rigid-body constraint engines (`hand-tracking-physics` & `genesis`).
+* **Native Desktop Graphics:** Cross-platform audio visualizer investigating volumetric 3D typography on Tauri 2 and Rust (`noctra`).
+
+---
+
+## Contact
+
+* **GitHub:** [@islomf2010-dot](https://github.com/islomf2010-dot)
