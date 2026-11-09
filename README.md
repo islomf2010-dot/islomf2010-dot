@@ -105,7 +105,7 @@ Whether engineering a zero-asset WebGL film with procedural GLSL shaders and syn
 
 * **Portfolio Monograph:** [github.com/islomf2010-dot/portfolio](https://github.com/islomf2010-dot/portfolio)
 * **GitHub Index:** [@islomf2010-dot](https://github.com/islomf2010-dot)
-* **Direct Electronic Mail:** [studio@vanta.atelier](mailto:studio@vanta.atelier)
+* **Direct Electronic Mail:** [islomf2010@gmail.com](mailto:islomf2010@gmail.com)
 
 <br/>
 
