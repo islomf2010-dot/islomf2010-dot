@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 96" width="100%" height="96" role="img" aria-label="Studio Vanta Colophon">
+  <defs>
+    <style>
+      .bg { fill: #080808; }
+      .frame { fill: none; stroke: #181818; stroke-width: 1; }
+      .rule { stroke: #181818; stroke-width: 1; }
+      .quote {
+        font-family: 'Cormorant Garamond', 'Bodoni Moda', Georgia, serif;
+        font-style: italic;
+        font-size: 16px;
+        fill: #D5D5D5;
+      }
+      .idx {
+        font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        fill: #777777;
+        letter-spacing: 1.6px;
+        font-variant-numeric: tabular-nums;
+      }
+      .idx-bright {
+        font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        fill: #F4F4F4;
+        letter-spacing: 1.6px;
+      }
+    </style>
+  </defs>
+  <rect width="1200" height="96" class="bg" />
+  <rect x="0.5" y="0.5" width="1199" height="95" class="frame" />
+  <line x1="0" y1="52" x2="1200" y2="52" class="rule" />
+
+  <text x="24" y="32" class="quote">“Subtract until only the essential tension remains—then engineer that tension to move at 60 frames per second.”</text>
+  <text x="1176" y="32" text-anchor="end" class="idx">THE ATELIER DOCTRINE</text>
+
+  <text x="24" y="78" class="idx-bright">STUDIO VANTA // BEYOND THE VISIBLE</text>
+  <text x="600" y="78" text-anchor="middle" class="idx">OPTICAL 2D &amp; PROCEDURAL WEBGL ARCHITECTURE</text>
+  <text x="1176" y="78" text-anchor="end" class="idx">EDITION 2026 · ALL BUILDS VERIFIED</text>
+</svg>
